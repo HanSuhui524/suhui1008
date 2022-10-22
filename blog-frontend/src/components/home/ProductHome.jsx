@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "../../../node_modules/@mui/icons-material/index";
+// import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "../../../node_modules/@mui/icons-material/index";
 
 
 
@@ -71,7 +71,7 @@ const ProductHome = ({item}) => {
         <Circle />
         <Image src={item.img}/>
         <Info>
-        <Icon>
+        {/* <Icon>
           <ShoppingCartOutlined />
         </Icon>
         <Icon>
@@ -79,7 +79,7 @@ const ProductHome = ({item}) => {
         </Icon>
         <Icon>
           <FavoriteBorderOutlined />
-        </Icon>
+        </Icon> */}
       </Info>
     </Container>
   )

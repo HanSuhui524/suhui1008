@@ -113,16 +113,24 @@ const Footer = () => {
                 <Desc>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </Desc>
                 <SocialContainer>
                     <SocialIcon color="3B5999">
+                    <a href="https://ko-kr.facebook.com/" target="_blank">
                         <Facebook />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="E4405F">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <Instagram />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="55ACEE">
+                    <a href="https://twitter.com/?lang=ko" target="_blank">
                         <Twitter />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="E60023">
+                    <a href="https://www.pinterest.co.kr/" target="_blank">
                         <Pinterest />
+                    </a>
                     </SocialIcon>
                 </SocialContainer>
                 </Left>

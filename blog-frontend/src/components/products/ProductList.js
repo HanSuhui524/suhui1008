@@ -106,16 +106,16 @@ return (
         <Image src={products.image}/>
         <ProductName><ProductTitle>{products.title}<br/></ProductTitle><Price>{products.price} won</Price></ProductName>
         <Info>
-        <Icon>
+        {/* <Icon>
           <ShoppingCartOutlined />
-        </Icon>
+        </Icon> */}
         <Icon>
           <SearchOutlined onClick={() => navigate(`/product/${products._id}`)}/> 
           {/* 여기 링크 각제품 상세페이지로 가게 고쳐 */}
         </Icon>
-        <Icon>
+        {/* <Icon>
           <FavoriteBorderOutlined />
-        </Icon>
+        </Icon> */}
       </Info>
     </Container2>
 

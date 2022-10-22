@@ -73,6 +73,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
+  padding-left: 70px;
   ${mobile({ width: "100%" })}
 `;
 
@@ -88,14 +89,14 @@ width: 70px;
   font-weight: 500;
 `;
 
-const FilterColor = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-  margin: 0px 5px;
-  cursor: pointer;
-`;
+// const FilterColor = styled.div`
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background-color: ${(props) => props.color};
+//   margin: 0px 5px;
+//   cursor: pointer;
+// `;
 
 // const FilterSize = styled.select`
 //   margin-left: 10px;
@@ -300,13 +301,12 @@ const ProductViewer =({ product, error, loading, onCartAddHandler, handleClick, 
         <Title>{product.title}</Title><br/>
         <Price>{product.price} won</Price>
         <FilterContainer>
-              <Filter>
+              {/* <Filter>
                 <FilterTitle>Color</FilterTitle>
                 <FilterColor color="black"></FilterColor>
                 <FilterColor color="darkblue"></FilterColor>
                 <FilterColor color="gray"></FilterColor>
-              </Filter>
-                
+              </Filter> */}
               <Filter>
                 <FilterTitle>사이즈</FilterTitle>
                 {!loading && product && (
@@ -320,8 +320,8 @@ const ProductViewer =({ product, error, loading, onCartAddHandler, handleClick, 
                 </SizeContainer>
               )}
                   </Filter>
-                
             </FilterContainer>
+            <br/>
             <Gid>
             <SwapHoriz onClick={() => onSizeModal()}/>사이즈 가이드
             <AskSizeGuideModal
@@ -342,21 +342,29 @@ const ProductViewer =({ product, error, loading, onCartAddHandler, handleClick, 
                   <ButtonHandle><Icon><Remove onClick={() => handleClick("-")}/></Icon></ButtonHandle>&emsp;
                   <Button onClick={() => onCartAddHandler()}><Ja>장바구니 추가</Ja></Button>  &emsp;
                  
-                  <Button><Ja>결  제</Ja></Button>
+                  {/* <Button><Ja>결  제</Ja></Button> */}
               </AmountContainer>
             </AddContainer><br/>
             <SocialContainer>
                     <SocialIcon color="3B5999">
+                    <a href="https://ko-kr.facebook.com/" target="_blank">
                         <Facebook />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="E4405F">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <Instagram />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="55ACEE">
+                    <a href="https://twitter.com/?lang=ko" target="_blank">
                         <Twitter />
+                    </a>
                     </SocialIcon>
                     <SocialIcon color="E60023">
+                    <a href="https://www.pinterest.co.kr/" target="_blank">
                         <Pinterest />
+                    </a>
                     </SocialIcon>
                 </SocialContainer>
           </InfoContainer>

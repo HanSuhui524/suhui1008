@@ -153,7 +153,7 @@ const Header = ({ user, onLogout, CartPage,products, changeInput}) => {
                 <Right>
                 {user ? (<>
                             <UserInfo>{user.username}</UserInfo>
-                            <Button onClick={onLogout}>로그아웃</Button>
+                            <Button onClick={onLogout} to="/">로그아웃</Button>
                             </>
                         ) : (
                             <div className="right">
@@ -165,8 +165,12 @@ const Header = ({ user, onLogout, CartPage,products, changeInput}) => {
             {/* <Badge badgeContent={4} color="primary"> */}
             <InsertComment onClick={() => navigate("/postList")}/>&ensp;
             {/* <AddCircleOutline onClick={() => navigate("/writeProduct")}/> &ensp; */}
-                          <PlaylistAdd onClick={() => navigate("/productList")}/>&ensp;
-              <ShoppingCartOutlined onClick={() => navigate("/cart")}/>
+            <PlaylistAdd onClick={() => navigate("/productList")}/>&ensp;
+            {user ? (
+                      <ShoppingCartOutlined onClick={() => navigate("/cart")}/>
+                    ) : (
+                      <></>
+                    )}
             {/* </Badge> */}
             </Icon>
           </MenuItem>
