@@ -78,7 +78,7 @@ export const seedOne = [
       },
       {
         id:5,
-        img:"/assets/pop3.JPG",
+        img:"/assets/pop3.jpg",
       },
       {
         id:6,
